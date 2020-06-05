@@ -1,0 +1,49 @@
+.animation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  &__corpse {
+    position: absolute;
+    background-color: white;
+    position: absolute;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    animation-duration: 2s;
+    animation-name: corpseAnimation;
+    animation-timing-function: linear;
+    top: 50%;
+  }
+}
+
+@keyframes corpseAnimation {
+  0% {
+    top: 0%;
+  }
+  13% {
+    top: 13%;
+  }
+  23% {
+    top: 50%;
+  }
+  37% {
+    top: 28%;
+  }
+  50% {
+    top: 50%;
+  }
+  62% {
+    top: 38%;
+  }
+  72% {
+    top: 50%;
+  }
+  80% {
+    top: 44%;
+  }
+  87%,
+  100% {
+    top: 50%;
+  }
+}
